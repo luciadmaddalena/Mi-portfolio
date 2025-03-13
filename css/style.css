@@ -15,7 +15,7 @@
     vertical-align: baseline;
 }
 
-img {
+img , figure {
     max-width: 100%;
     width: 100%;
     display: flex;
@@ -29,7 +29,38 @@ a {
     color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+video {
+    max-width: 100%;
+    display: flex;
+    object-fit: cover;
+    object-position: center center;
+}
+
+p a {
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+}
+
+table,
+tr,
+td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
     color: inherit;
     font-weight: inherit;
     font-size: inherit;
@@ -52,4 +83,129 @@ body {
     background-color: var(blanco);
     -webkit-font-smoothing: anitialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.header{
+    width: 100%;
+    min-height: 5em;
+    background: lightblue;
+
+    padding: 1em 2em;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .h1{}
+.header .h1 .a{}
+.header .nav{}
+.header .nav .ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header .nav .ul .li{
+    margin: 0 1em;
+}
+.header .nav .ul .li .a{}
+
+.main{
+    background: lightgray;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.main .seccion{
+    width: 100%;
+    min-height: 80vh;
+    background: lightcyan;
+    margin: 1em 0;
+    padding: 2em;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main .seccion .circulo{}
+.seccion .h2{}
+.seccion .h3{}
+
+.seccion .p{}
+.seccion .grid{
+    width: 90%;
+    max-width: 40em;
+    background: lightcoral;
+    margin: 1em 0;
+
+    display: grid;
+    grid-template-columns: repeat( auto-fit , minmax( 10rem , 1fr));
+    gap: 1em;
+}
+.seccion .article{
+    width: 100%;
+    min-height: 20vh;
+    background: lightgoldenrodyellow;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.seccion .a{}
+.section .figure{    
+    width: 100%;
+    background: red;}
+.seccion .img{
+    width: 100%;
+    background: lime;
+}
+.seccion .h4{
+    width: 100%;
+    height: 50%;
+    background: coral;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about{}
+.about .h2{
+    margin: 0 0 1rem;
+}
+.about .p{
+    max-width: 40em;
+    background: lime;
+    margin: 0 0 1em;
+    text-align: left;
+}
+.about .rrss{
+    width: 100%;
+    background: lightgreen;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.about .li{
+    background: orange;
+    margin: 0 1em;
+}
+.about .li .a{}
+.about .li .a .svg{
+    width: 3em;
+    height: 3em;
+    background: red;
 }
