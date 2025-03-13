@@ -1,0 +1,55 @@
+
+:root {
+    --rojo: #e50914;
+    --blanco: white;
+    --gris: #303030;
+    --gris-f: #757575;
+    --tipo-principal:"Playfair Display", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    object-position: center center;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+form, button, input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+            hyphens: auto;
+    background-color: transparent;
+    display: flex;
+    color: inherit;
+}
+
+body {
+    font-family: var;
+    font-size: 100%;
+    min-height: 100vh;
+    background-color: var(blanco);
+    -webkit-font-smoothing: anitialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
