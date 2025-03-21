@@ -51,10 +51,6 @@ td {
     border-spacing: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 h1, 
 h2, 
 h3, 
@@ -81,8 +77,6 @@ body {
     font-size: 100%;
     min-height: 100vh;
     background-color: var(--negro);
-    -webkit-font-smoothing: anitialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 .circulos{
@@ -169,19 +163,20 @@ body {
     z-index: 2;
 }
 
-.seccion .info{
-    font-size: 1.2em;
-}
 .seccion{
     width: 100%;
     min-height: 80vh;
-    /* margin: 1em 0; */
     padding: 2em;
 
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+
+    border-bottom: 1px solid white;
+}
+.seccion .info{
+    font-size: 1.2em;
 }
 .seccion .ul{
     /* background: red; */
