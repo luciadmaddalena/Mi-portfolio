@@ -206,7 +206,7 @@ body {
 
 }
 .seccion .ul .a:hover{
-    color: white;
+    color: rgba(255, 255, 255, .8);
     background: black;
 }
 .seccion .h2{
@@ -214,8 +214,7 @@ body {
     font-weight: 800;
     font-size: 5em;
     line-height: 1em;
-    color: rgba(0, 0, 0, .7);
-    mix-blend-mode: multiply;
+    color: black;
 }
 .seccion .h3{
     font-family: var(--tipo-titular);
@@ -235,7 +234,6 @@ body {
 .seccion .article{
     width: 100%;
     min-height: 20vh;
-    background: lightgoldenrodyellow;
 
     display: flex;
     flex-flow: column nowrap;
@@ -248,10 +246,9 @@ body {
 .seccion .a{}
 .section .figure{    
     width: 100%;
-    background: red;}
+}
 .seccion .img{
     width: 100%;
-    background: lime;
 }
 .seccion .h4{
     width: 100%;
@@ -298,7 +295,7 @@ body {
     /* background: lime; */
     margin: 0 0 1rem;
     font-size: 1.1rem;
-    text-align: left;
+    text-align: justify left;
 }
 .about .rrss{
     width: 100%;
