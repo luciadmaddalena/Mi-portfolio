@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/app.js"></script>
-    <title>Mi Portfolio</title>
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">-->
+    <title> Lucía Della Maddalena - Mi Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 </head>
 <body>
@@ -20,23 +18,30 @@
     </div>
 
     <header class="header">
-        <h1 class="h1"><a href="#inicio" class="a"></a></h1>
-            <nav class="nav">
-                <ul class="ul">
-                    <li class="li"><a href="#inicio" title="Inicio" class="a">Inicio</a></li>
-                    <li class="li"><a href="#works" title="Works" class="a">Trabajos</a></li>
-                    <li class="li"><a href="#about" title="About" class="a">Contacto</a></li>
-                </ul>
+        <div class="nav-container">
+            <div class="logo">Portfolio Profesional</div>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Inicio</a>
+                <a href="#about" class="nav-link">Sobre mi</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Proyectos</a>
+                <a href="#contact" class="nav-link">Contacto</a>
             </nav>
+        </div>
     </header>
 
-    <main class="main">
-        <div class="seccion" id="inicio">
+    <main class="main/content">
             
-            <section class="section info">
-                <h2 class="h2">Lucía Della Maddalena</h2>
-                <h3 class="h3">Frontend Developer</h3>
-
+            <section class="hero" id="home">
+                <div class="container">
+                    <div class="hero-badge">Frontend Developer</div>
+                    <h1 class="">Lucia Della Maddalena</h1>
+                    <p class="hero-subtitle"></p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary">Ver mas</a>
+                    </div>
+                </div>
+            <!-- 
                 <ul class="ul">
                     <li class="li">
                         <a href="https://www.linkedin.com/in/luciadmaddalena/" class="a" title="linkedin">VISITAR MI LINKEDIN</a>
@@ -44,9 +49,111 @@
                     <li class="li">
                         <a href="https://github.com/luciadmaddalena" class="a" title="Github">VISITAR MI GITHUB</a>
                     </li>
-                </ul>
+                </ul> -->
             </section>
         </div>
+
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header">
+                <h2 class="section-title">Acerca de mi</h2>
+                <p class="section-subtitle">Desarrolladora Frontend</p>
+            </div>
+            <div class="about-content">
+                <div class="about-avatar"></div>
+                <div class="about-text">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            </div> 
+        </section>
+
+        <section class="section skills" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Tecnologias</h2>
+                    <p class="section-subtitle">Herramientas y tecnologias</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">H</div>
+                        <h3 class="skill-title">HTML5</h3>
+                        <p class="skill-description">Estructura ...</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">C</div>
+                        <h3 class="skill-title">CSS3</h3>
+                        <p class="skill-description">Estructura ...</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">J</div>
+                        <h3 class="skill-title">JavaScript</h3>
+                        <p class="skill-description">Estructura ...</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">R</div>
+                        <h3 class="skill-title">React</h3>
+                        <p class="skill-description">Estructura ...</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">G</div>
+                        <h3 class="skill-title">Git</h3>
+                        <p class="skill-description">Estructura ...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section proyects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experimentos & Proyectos</h2>
+                    <p class="section-subtitle">Seleccion de proyectos</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">pROYECTO1</h3>
+                            <p class="project-description">descripcion..</p>
+                            <div class="project-tech"><span class="tech-tag"></span><span class="tech-tag"></span><span class="tech-tag"></span><span class="tech-tag"></span></div>
+                            <a href="Ver mas" class="proyect-link"></a>
+                        </div>
+                         <div class="project-card">
+                        <div class="project-image"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">pROYECTO1</h3>
+                            <p class="project-description">descripcion..</p>
+                            <div class="project-tech"><span class="tech-tag"></span><span class="tech-tag"></span><span class="tech-tag"></span><span class="tech-tag"></span></div>
+                            <a href="Ver mas" class="proyect-link"></a>
+                        </div>
+                         <div class="project-card">
+                        <div class="project-image"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">pROYECTO1</h3>
+                            <p class="project-description">descripcion..</p>
+                            <div class="project-tech"><span class="tech-tag"></span><span class="tech-tag"></span><span class="tech-tag"></span><span class="tech-tag"></span></div>
+                            <a href="Ver mas" class="proyect-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">titulo</h2>
+                    <p class="section-subtitle">subtitulo</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
 
         <section class="seccion works" id="works">
             <h2 class="h2">Trabajos</h2>
