@@ -1,0 +1,103 @@
+:root {
+    /*modo claro*/
+     --white: #FFFFFF;
+            --black: #000000;
+            --light-purple: #D2C6E6;
+            --dark-blue: #1B2261;
+            --pink: #E899CF;
+            --light-pink: #ECD3E3;
+            --dark-bg: #06080F;
+
+    /*asignacion de variables para modo claro*/
+    --primary: var(--dark-blue);
+            --secondary: var(--pink);
+            --accent1: var(--light-purple);
+            --accent2: var(--light-pink);
+            --text: var(--black);
+            --text-light: #444;
+            --bg: var(--white);
+            --bg-secondary: var(--light-pink);
+            --card-bg: var(--white);
+            --border: #D2C6E6;
+            --shadow: rgba(0, 0, 0, 0.1);
+}
+
+.dark-more {
+    --primary: var(--light-purple);
+            --secondary: var(--pink);
+            --accent1: var(--dark-blue);
+            --accent2: var(--dark-bg);
+            --text: var(--white);
+            --text-light: var(--light-pink);
+            --bg: var(--dark-bg);
+            --bg-secondary: #0D101C;
+            --card-bg: #121625;
+            --border: #1B2261;
+            --shadow: rgba(0, 0, 0, 0.4);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+/*Header y Nav*/
+
+header {
+    padding: 20px 0;
+    background-color: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px var(--shadow);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links a:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: width 0.3s;
+}
