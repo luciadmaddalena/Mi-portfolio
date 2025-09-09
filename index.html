@@ -1,220 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/app.js"></script>
-    <title> Lucía Della Maddalena - Mi Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-</head>
-<body>
-    <div class="circulos">
-        <div class="circulo circulo1"></div>
-        <div class="circulo circulo2"></div>
-        <div class="circulo circulo3"></div>
-        <div class="circulo circulo4"></div>
-    </div>
-
-    <header class="header">
-        <div class="nav-container">
-            <div class="logo">Portfolio Profesional</div>
-            <nav class="nav-links">
-                <a href="#home" class="nav-link active">Inicio</a>
-                <a href="#about" class="nav-link">Sobre mi</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Proyectos</a>
-                <a href="#contact" class="nav-link">Contacto</a>
-            </nav>
-        </div>
+    <title>Lucía Della Maddalena - Mi Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">MiPortfolio</div>
+            <ul class="nav-links">
+              <li><a href="#about">Sobre Mi</a></li>
+              <li><a href="#skills">Habilidades</a></li>
+              <li><a href="#projects">Proyectos</a></li>
+              <li><a href="#certificates">Certificados</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <button class="theme-toogle">
+              <i class="fas fa-moon" id="themeToogle"></i>
+            </button>
+        </nav>
+      </div>
     </header>
 
-    <main class="main/content">
-            
-            <section class="hero" id="home">
-                <div class="container">
-                    <div class="hero-badge">Frontend Developer</div>
-                    <h1 class="">Lucia Della Maddalena</h1>
-                    <p class="hero-subtitle"></p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn-primary">Ver mas</a>
-                    </div>
-                </div>
-            <!-- 
-                <ul class="ul">
-                    <li class="li">
-                        <a href="https://www.linkedin.com/in/luciadmaddalena/" class="a" title="linkedin">VISITAR MI LINKEDIN</a>
-                    </li>
-                    <li class="li">
-                        <a href="https://github.com/luciadmaddalena" class="a" title="Github">VISITAR MI GITHUB</a>
-                    </li>
-                </ul> -->
-            </section>
-        </div>
-
-        <section class="section about" id="about">
+    <main>
+        <section class="hero">
             <div class="container">
-                <div class="section-header">
-                <h2 class="section-title">Acerca de mi</h2>
-                <p class="section-subtitle">Desarrolladora Frontend</p>
+                <h1>Lucia Della Maddalena</h1>
+                <h2>Desarroladora Frontend</h2>
+                <p>Abriendo mi camino como desarrolladora creando proyectos prácticos en HTML, CSS, JavaScript y React. Me esfuerzo en crear interfaces modernas, responsivas y accesibles</p>
+                <a href="#projects" class="btn">Ver Proyectos</a>
+                <a href="#contact" class="btn btn-secondary">Contactame</a>
             </div>
-            <div class="about-content">
-                <div class="about-avatar"></div>
-                <div class="about-text">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-            </div>
-            </div> 
         </section>
 
-        <section class="section skills" id="skills">
+        <section id="skills">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Skills & Tecnologias</h2>
-                    <p class="section-subtitle">Herramientas y tecnologias</p>
-                </div>
+                <h2 class="section-title">Habilidades Técnicas</h2>
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <div class="skill-icon">H</div>
-                        <h3 class="skill-title">HTML5</h3>
-                        <p class="skill-description">Estructura ...</p>
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML5</h3>
+                        <p>Marcado semántico, accesibilidad y mejores prácticas.</p>
                     </div>
                     <div class="skill-card">
-                        <div class="skill-icon">C</div>
-                        <h3 class="skill-title">CSS3</h3>
-                        <p class="skill-description">Estructura ...</p>
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS3</h3>
+                        <p>Flexbox, Grid, animaciones y diseño responsive.</p>
                     </div>
                     <div class="skill-card">
-                        <div class="skill-icon">J</div>
-                        <h3 class="skill-title">JavaScript</h3>
-                        <p class="skill-description">Estructura ...</p>
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>ES6+, manipulación del DOM, APIs y async/await.</p>
                     </div>
                     <div class="skill-card">
-                        <div class="skill-icon">R</div>
-                        <h3 class="skill-title">React</h3>
-                        <p class="skill-description">Estructura ...</p>
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>React</h3>
+                        <p>Componentes, hooks, estado y context API.</p>
                     </div>
                     <div class="skill-card">
-                        <div class="skill-icon">G</div>
-                        <h3 class="skill-title">Git</h3>
-                        <p class="skill-description">Estructura ...</p>
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h3>Git</h3>
+                        <p>Control de versiones, flujos de trabajo colaborativos.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Diseño adaptable para todos los dispositivos.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section proyects" id="projects">
+        <section id="projects">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Experimentos & Proyectos</h2>
-                    <p class="section-subtitle">Seleccion de proyectos</p>
-                </div>
+                <h2 class="section-title">Proyectos Destacados</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <div class="project-image"></div>
+                        <div class="project-img">E-commerce App</div>
                         <div class="project-content">
-                            <h3 class="project-title">pROYECTO1</h3>
-                            <p class="project-description">descripcion..</p>
-                            <div class="project-tech"><span class="tech-tag"></span><span class="tech-tag"></span><span class="tech-tag"></span><span class="tech-tag"></span></div>
-                            <a href="Ver mas" class="proyect-link"></a>
+                            <h3 class="project-title">Tienda Online</h3>
+                            <p class="project-desc">Plataforma de e-commerce con carrito de compras, pasarela de pago y panel de administracion</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">React</span>
+                                </div>
+                                <a href="" class="view-cert">Ver Proyecto</a>
                         </div>
-                         <div class="project-card">
-                        <div class="project-image"></div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">Dashboard Analytics</div>
                         <div class="project-content">
-                            <h3 class="project-title">pROYECTO1</h3>
-                            <p class="project-description">descripcion..</p>
-                            <div class="project-tech"><span class="tech-tag"></span><span class="tech-tag"></span><span class="tech-tag"></span><span class="tech-tag"></span></div>
-                            <a href="Ver mas" class="proyect-link"></a>
+                            <h3 class="project-title">Dashboard Interactivo</h3>
+                            <p class="project-desc">Panel de control con gráficos interactivos, tablas dinámicas y visualización de datos.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                            <a href="#" class="view-cert">Ver Proyecto →</a>
                         </div>
-                         <div class="project-card">
-                        <div class="project-image"></div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">Travel Blog</div>
                         <div class="project-content">
-                            <h3 class="project-title">pROYECTO1</h3>
-                            <p class="project-description">descripcion..</p>
-                            <div class="project-tech"><span class="tech-tag"></span><span class="tech-tag"></span><span class="tech-tag"></span><span class="tech-tag"></span></div>
-                            <a href="Ver mas" class="proyect-link"></a>
+                            <h3 class="project-title">Blog de Viajes</h3>
+                            <p class="project-desc">Blog responsive con sistema de comentarios, búsqueda y categorías.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                            <a href="#" class="view-cert">Ver Proyecto →</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section contact" id="contact">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">titulo</h2>
-                    <p class="section-subtitle">subtitulo</p>
-                </div>
-            </div>
-        </section>
+        
+        
 
-
-
-
-
-        <section class="seccion works" id="works">
-            <h2 class="h2">Trabajos</h2>
-            <p class="p">Aquí presento algunos de mis trabajos realizados mientras estudiaba en cursos de HTML, CSS Y Javascript</p>
-
-            <div class="grid">
-                <article class="article">
-                    <a class="a" href="#" title="Trabajo1">
-                        <figure class="figure">
-                            <img src="assets/mipagweb.jpg" alt="Imagen" class="img">
-                        </figure>
-                        <h4 class="h4">Página web con carrusel</h4>
-                    </a>
-                </article>
-                <article class="article">
-                    <a class="a" href="#" title="Trabajo2">
-                        <figure class="figure">
-                            <img src="assets/mipagweb2.jpg" alt="Imagen" class="img">
-                        </figure>
-                        <h4 class="h4">Portfolio interactivo con base de datos</h4>
-                    </a>
-                </article>
-            </div>
-        </section>
-
-        <section class="seccion about" id="about">
-            <h2 class="h2">Sobre mí</h2>
-            <p class="p">|Cursos realizados|</p>
-            <ul class="p">
-                <li class="p">-Full Stack Developer: Desarrollo web Frontend y desarrollo web Backend (básico).
-                    <h4 class="subtitle">Digital Mind</h4></li>
-                <li>-Diseño Web: Estructura y diseño de página web, JavaScript, Base de datos. 
-                    <h4 class="subtitle">Ministerio de Educación</h4>
-                </li>
-            </ul>
-            <p class="p">Cuento con habilidades y conocimientos para trabajar con HTML, CSS, JavaScript, Base de datos.</p>
-            <p class="p">Me encuentro en búsqueda de un trabajo que me permita crecer profesionalmente en el ambiente IT. Soy una persona comprometida, responsable y con mucha determinacion a crecer. Poseo capacidad para adaptarme a entornos laborales rápidamente y asumir nuevos desafíos. Soy capaz de trabajar en equipo, manteniendo una comunicación clara y efectiva buscando contribuir a un ambiente laboral colaborativo. </p>
-
-            <ul class="rrss">
-                <li class="li">
-                    <a href="https://github.com/luciadmaddalena" class="a" title="Nombre" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                        </svg>
-                    </a>
-                </li>
-                <li class="li">
-                    <a href="https://www.linkedin.com/in/luciadmaddalena/" class="a" title="Nombre" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </section>
     </main>
 
-    <footer class="footer">
-        <span class="span">Gracias por leer. Thanks for reading ~ Lucía Della Maddalena</span>
-    </footer>
-    
 
-</body>
+
+    <footer class="footer">
+      <span class="span"
+        >Gracias por leer. Thanks for reading ~ Lucía Della Maddalena</span
+      >
+    </footer>
+  </body>
 </html>
