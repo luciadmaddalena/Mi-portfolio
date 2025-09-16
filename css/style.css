@@ -160,6 +160,38 @@ nav {
     margin: 0 auto 30px;
 }
 
+#texto {
+           font-size: 1.1rem;
+    color: var (--text-light);
+    max-width: 700px;
+    margin: 0 auto 30px;
+            border-left: 4px solid #a777e3;
+            padding-left: 30px;
+            
+        }
+        
+        .cursor {
+            display: inline-block;
+            background-color: #a777e3;
+            width: 3px;
+            height: 28px;
+            margin-left: 4px;
+            animation: parpadeo 0.8s infinite;
+            vertical-align: middle;
+        }
+        
+        @keyframes parpadeo {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        .reload-note {
+            margin-top: 25px;
+            font-style: italic;
+            color: #777;
+            font-size: 14px;
+        }
+
 .btn {
     display: inline-block;
     padding: 12px 30px;
