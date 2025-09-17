@@ -212,7 +212,7 @@ nav {
 
 .btn-secondary {
             background-color: var(--secondary);
-        }
+}
 
         /* Secciones */
         section {
@@ -265,6 +265,11 @@ nav {
             overflow: hidden;
             box-shadow: 0 5px 15px var(--shadow);
             border: 1px solid var(--border);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
         }
 
         .proyect-img {
@@ -321,6 +326,11 @@ nav {
             border-radius: 10px;
             box-shadow: 0 5px 15px var(--shadow);
             border: 1px solid var(--border);
+            transition: transform 0.3s;
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-5px);
         }
 
         .certificate-title {
@@ -339,6 +349,12 @@ nav {
             color: var(--primary);
             text-decoration: none;
             font-weight: 500;
+            transition: text-decoration 0.3s;
+        }
+
+        .view-cert:hover {
+            text-decoration: underline;
+            color: var(--pink);
         }
 
         /*contacto*/
