@@ -19,7 +19,7 @@ themeToggle.addEventListener('click', () => {
     } else {
         localStorage.setItem('theme', 'light');
         iconTheme.classList.remove('fa-sun');
-        iconTheme.classList.add('fa/moon');
+        iconTheme.classList.add('fa-moon');
     }
 })
 
