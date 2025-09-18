@@ -2,6 +2,10 @@
 const themeToggle = document.getElementById('themeToggle');
 const iconTheme = themeToggle.querySelector('i');
 
+// Toggle para menú móvil
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
 //verificar preferencia del usuario
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
@@ -22,6 +26,26 @@ themeToggle.addEventListener('click', () => {
         iconTheme.classList.add('fa-moon');
     }
 })
+
+// Abrir/cerrar menú móvil
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            
+            if (navLinks.classList.contains('active')) {
+                menuToggle.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
 
 //smooth scroll para navegacion
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

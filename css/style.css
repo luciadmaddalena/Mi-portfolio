@@ -335,6 +335,7 @@ section {
   display: flex;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
+  
 }
 
 .certificate-card {
@@ -439,17 +440,134 @@ footer {
   margin-top: 50px;
 }
 
-/*responsive*/
-@media (max-width: 768px) {
-  .nav-link {
-    display: none;
+
+@media (max-width: 1024px) {
+  .hero h1{
+    font-size: 3rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .skills-grid,
+  .projects-grid,
+  .certificates-container {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
   }
 
+  .certificates-container {
+    flex-wrap: wrap;
+  }
+  .contact-container {
+    gap: 30px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: var(--bg);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    transition: left 0.3s ease;
+    z-index: 99;
+  }
+  .nav-links.active {
+    left: 0;
+  }
+  .nav-links a {
+    margin: 15px 0;
+  }
+  .hero {
+    padding: 80px 0;
+  }
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
-
+  .hero p {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+  .btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  .skills-grid,
+  .projects-grid, 
+  .certificates-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .certificates-container {
+    flex-wrap: wrap;
+  }
+  .skill-card,
+  .certificate-card {
+    padding: 20px;
+  }
+  .project-img {
+    height: 180px;
+    font-size: 1.3rem;
+  }
   .contact-container {
     grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+ 
+  .skill-icon {
+    font-size: 2rem;
+  }
+  .project-img {
+    height: 150px;
+    font-size: 1.2rem;
+  }
+  .contact-info {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
 }
